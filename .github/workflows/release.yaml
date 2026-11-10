@@ -103,6 +103,8 @@ jobs:
                 forceInsecure: false
               - imageRef: ghcr.io/${{ github.repository_owner }}/nvidia-firmware-ext:${FIRMWARE_EXT_TAG}
                 forceInsecure: false
+              - imageRef: ${TAILSCALE_EXT_IMAGE}
+                forceInsecure: false
           customization:
             extraKernelArgs:
               # Serial console for UART debug.

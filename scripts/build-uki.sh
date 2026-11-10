@@ -122,6 +122,8 @@ input:
       forceInsecure: ${FORCE_INSECURE}
     - imageRef: ${REGISTRY_DOCKER}/nvidia-firmware-ext:${FIRMWARE_EXT_TAG}
       forceInsecure: ${FORCE_INSECURE}
+    - imageRef: ${TAILSCALE_EXT_IMAGE}
+      forceInsecure: false
 customization:
   extraKernelArgs:
     # Serial console for UART debug.

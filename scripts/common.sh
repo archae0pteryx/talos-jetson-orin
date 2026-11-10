@@ -41,6 +41,7 @@ LLVM_IMAGE="${LLVM_IMAGE:-ghcr.io/siderolabs/llvm}"  # informational only
 NVGPU_VERSION="${NVGPU_VERSION:-5.10.11}"        # .../ 5.10.10 (chore: remove dead GCC_PLUGIN_LATENT_ENTROPY code from nvgpu build) / 5.10.11 (feat: replace #if 1 force-hacks with LINUX_VERSION_CODE guards; use confirmed path generated/uapi/linux/version.h)
 FIRMWARE_EXT_TAG="${FIRMWARE_EXT_TAG:-v5}"        # v1 / v2 / v3 / v4 / v5 (pmu_pkc_prod_sig.bin added)
 KERNEL_MODULES_VERSION="${KERNEL_MODULES_VERSION:-1.3.0}"
+TAILSCALE_EXT_IMAGE="${TAILSCALE_EXT_IMAGE:-ghcr.io/siderolabs/tailscale:1.96.4}"
 
 # ── Derived image tags ───────────────────────────────────────────────────────
 IMG_INSTALLER="${REGISTRY}/custom-installer:${TALOS_VERSION}-${KERNEL_VERSION}-nvgpu${NVGPU_VERSION}"
